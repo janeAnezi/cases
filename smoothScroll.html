@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(12, 43, 1);
+}
+nav img {
+    /* border-radius: 5px 20px 3px 10px ; */
+    /* border-radius: 50px; */
+    border-radius: 50%;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 24px;
+}
+nav ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav ul a:hover {
+    color: rgb(241, 167, 77);
+}
+#home {
+    /* background-color: rgb(88, 69, 2); */
+    /* background: linear-gradient(75deg, blue, orange, purple,black); */
+    background-image: url('../projects/carousel/images/img2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home h1 {
+    color: rgb(251, 251, 249);
+    font-size: 50px;
+    margin-bottom: 8px;
+    text-shadow: 1px 1.5px white;
+    text-transform: uppercase;
+}
+#home button {
+    font-size: 20px;
+    margin-top: 8px;
+    padding: 3px 5px 3px 5px ;
+    text-transform: lowercase;
+    background-color: transparent;
+    color: azure;
+}
+#home button:hover {
+    background-color: rgb(151, 151, 4);
+}
+#about {
+    padding: 30px 0;
+    height: 100vh;
+    text-align: center;
+}
+.about-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(190, 246, 170);
+}
+.about-flex img {
+    width: 40%;
+}
+.abt-p {
+    width: 60%;
+}
+#contact {
+    background-color: rgb(12, 43, 1);
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+#contact h1 {
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: line-through;
+}
+#contact ul {
+    list-style-type:lower-roman;
+    /* margin-left: 43%; */
+}
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="./ima2.jpg" alt="rose flower" width="80px" height="80px">
+       
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        
+    </nav>
+    <section id="home">
+        <div>
+            <h1>New Page</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, iste?</p>
+            <button>click Me</button>
+        </div>  
+    </section>
+    <section id="about">
+        <h1>About Me</h1>
+        <div class="about-flex">
+            <img src="../projects/carousel/images/img3.png" alt="">
+            <div class="abt-p">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eveniet blanditiis odit eius perspiciatis maxime inventore exercitationem perferendis minima. Rem illo eveniet aut expedita alias ab inventore quia, quo quod.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+
+
+    </section>
+    <section id="contact">
+        <div>
+            <h1>My Lists</h1>
+            <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ul>
+        </div>
+        <div>
+            <h1>My Lists</h1>
+            <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ul>
+        </div>
+        <div>
+            <h1>My Lists</h1>
+            <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ul>
+        </div>
+        <div>
+            <h1>My Lists</h1>
+            <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="flex">
+        <div>
+            <img src="" alt="">
+            <div>
+               <h1></h1> 
+               <p></p>
+            </div>
+            
+            <p></p>
+        </div>
+        <div></div>
+        <div></div>
+    </section>
+    
+</body>
+</html>

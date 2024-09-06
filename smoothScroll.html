@@ -10,9 +10,9 @@
     margin: 0;
     padding: 0;
 }
-html {
+/* html {
     scroll-behavior: smooth;
-}
+} */
 nav {
     display: flex;
     justify-content: space-around;
@@ -198,5 +198,20 @@ nav ul a:hover {
         <div></div>
     </section>
     
+
+
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+        
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        </script>
+        
 </body>
 </html>

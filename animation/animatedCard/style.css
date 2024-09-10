@@ -14,7 +14,8 @@
 .card {
     text-align: center;
     width: 20%;
-    background-color: aliceblue;
+    background: radial-gradient(#a4bace, #1159ab);
+    /* background: radial-gradient(circle at 100%, #333, #333 50%, #eee 75%, #333 75%); */
     padding: 30px;
 }
 .card:hover .content-text {
@@ -27,7 +28,9 @@
     transform: translateY(-100px)
 }
 .card:hover a {
-    transform: translateY(40px) 
+    transform: translateY(40px);
+    background-color: rgb(172, 6, 130) ; 
+    color: white;
 }
 .content-text {
     display: none;
@@ -51,9 +54,10 @@
     top: 15px;
     display: inline-block;
     padding: 12px 25px;
-    background-color: rgb(172, 6, 130) ;
-    color: white;
-    font-weight: 500;
+    color: aqua;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
 }
 
 .container .card .content a:hover {

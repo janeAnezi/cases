@@ -19,6 +19,18 @@
 }
 .content-text {
     display: none;
+    animation-name: slow-mo;
+    animation-duration: 2.5s;
+    animation-delay: 1.3s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+@keyframes slow-mo {
+    0%{transform: rotateX(0);}
+    100%{transform: rotateX(90deg);}
+}
+.content-text h2 {
+    color: rgb(172, 6, 130);
 }
 .container .card .content a{
     position: relative;

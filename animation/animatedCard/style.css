@@ -1,3 +1,13 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card {
+    text-align: center;
+    width: 20%;
+}
 .container .card .content a{
     position: relative;
     top: 15px;

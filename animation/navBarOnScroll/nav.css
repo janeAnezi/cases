@@ -1,0 +1,24 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#navbar {
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    transition: top 3s; /* Smooth transition for hiding/showing */
+    z-index: 1000;
+}
+
+.content {
+    margin-top: 60px; /* Adjust based on navbar height */
+    padding: 20px;
+    height: 2000px; /* For demonstration, gives enough content to scroll */
+}

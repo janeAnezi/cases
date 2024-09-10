@@ -8,3 +8,8 @@
     font-weight: 500;
     text-decoration: none;
 }
+.container .card .content a:hover {
+    opacity: 0.8;
+    background-color: black;
+    color: aqua;
+}

@@ -10,9 +10,15 @@
     background-color: aliceblue;
     padding: 30px;
 }
+.card:hover .content-text {
+    display: block;
+}
 .container img {
     border-radius: 20px;
     
+}
+.content-text {
+    display: none;
 }
 .container .card .content a{
     position: relative;

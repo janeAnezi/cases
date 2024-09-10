@@ -2,11 +2,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    height: 100vh;
 }
 .card {
     text-align: center;
     width: 20%;
+    background-color: aliceblue;
+    padding: 30px;
+}
+.container img {
+    border-radius: 20px;
 }
 .container .card .content a{
     position: relative;

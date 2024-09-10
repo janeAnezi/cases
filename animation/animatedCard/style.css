@@ -25,7 +25,9 @@
 }
 .card:hover img {
     transform: translateY(-100px)
-
+}
+.card:hover a {
+    transform: translateY(40px) 
 }
 .content-text {
     display: none;
@@ -37,14 +39,14 @@
     animation-fill-mode: both;
     animation-iteration-count: 1;
 }
-@keyframes slow-mo0 {
-    0%{transform: rotateX(0);}
-    100%{transform: rotateX(90deg);}
+@keyframes slow-mo {
+    100%{transform: rotateX(0);}
+    0%{transform: rotateX(90deg);}
 }
 .content-text h2 {
     color: rgb(172, 6, 130);
 }
-.container .card .content a{
+.content a{
     position: relative;
     top: 15px;
     display: inline-block;
@@ -52,8 +54,8 @@
     background-color: rgb(172, 6, 130) ;
     color: white;
     font-weight: 500;
-    text-decoration: none;
 }
+
 .container .card .content a:hover {
     opacity: 0.8;
     background-color: black;

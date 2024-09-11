@@ -27,13 +27,13 @@
 }
 .card:hover img {
     transform: translateY(-100px);
-    transition: all 2s ease;
+    transition: all 2s ease-in-out;
 }
 .card:hover a {
     transform: translateY(40px);
     background-color: rgb(172, 6, 130) ; 
     color: white;
-    transition: all 2s ease;
+    transition: all 2s ease-in-out;
 }
 .content-text {
     display: none;

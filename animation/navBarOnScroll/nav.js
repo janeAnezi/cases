@@ -1,7 +1,6 @@
 // script.js
 let lastScrollTop = 0;
 const navbar = document.getElementById('navbar');
-
 window.addEventListener('scroll', () => {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 

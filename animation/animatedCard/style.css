@@ -13,7 +13,7 @@
 }
 .card {
     text-align: center;
-    width: 20%;
+    width: 30%;
     background: radial-gradient(#a4bace, #1159ab);
     /* background: radial-gradient(circle at 100%, #333, #333 50%, #eee 75%, #333 75%); */
     padding: 30px;

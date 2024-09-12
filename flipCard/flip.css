@@ -42,10 +42,10 @@ body {
 }
 
 .flip-card-front {
-    background-color: #333;
+    background-color: #045572;
 }
 
 .flip-card-back {
-    background-color: #007BFF;
+    background-color: #1a023b;
     transform: rotateY(180deg); /* Initially flips the back side 180 degrees */
 }

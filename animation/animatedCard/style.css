@@ -14,9 +14,9 @@
 .card {
     text-align: center;
     width: 30%;
-    background: radial-gradient(#a4bace, #1159ab);
+    background: radial-gradient(#a4bace, #28a678, #025e3c,#222501);
     /* background: radial-gradient(circle at 100%, #333, #333 50%, #eee 75%, #333 75%); */
-    padding: 30px;
+    padding: 20px;
 }
 
 .card:hover .content-text {
@@ -63,7 +63,7 @@
     text-decoration: none;
 }
 
-.container .card .content a:hover {
+.container a:hover {
     opacity: 0.8;
     background-color: black;
     color: aqua;

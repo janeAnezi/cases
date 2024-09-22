@@ -19,4 +19,15 @@ function validateForm() {
         alert("Please enter a valid email address.");
         return false;
     }
+
+    // Phone validation (for a 10-digit number)
+    if (phone === "") {
+        alert("Please enter your phone number.");
+        return false;
+    } else if (!isValidPhone(phone)) {
+        alert("Please enter a valid 10-digit phone number.");
+        return false;
+    }
+
+    
 }

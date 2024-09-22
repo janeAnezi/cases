@@ -54,3 +54,9 @@ function isValidEmail(email) {
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     return emailPattern.test(email);
 }
+
+// Phone validation function using regex
+function isValidPhone(phone) {
+    const phonePattern = /^[0-9]{10}$/;
+    return phonePattern.test(phone);
+}

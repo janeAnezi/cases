@@ -1,7 +1,7 @@
 // Select the counter element
 const counterElement = document.getElementById('counter');
 let targetNumber = 100;  // Set the number you want to count to
-let startNumber = 0;
+let startNumber = 70;
 let isCounting = false;
 
 // Function to animate the counting
@@ -13,7 +13,7 @@ function countUp() {
     } else {
       clearInterval(interval);
     }
-  }, 20);  // Adjust the speed here
+  }, 100);  // Adjust the speed here
 }
 
 // Intersection Observer to trigger counting when section is in view

@@ -60,3 +60,9 @@ function isValidPhone(phone) {
     const phonePattern = /^[0-9]{10}$/;
     return phonePattern.test(phone);
 }
+
+// Password validation function (at least 6 characters, 1 uppercase letter, 1 number)
+function isValidPassword(password) {
+    const passwordPattern = /^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{6,}$/;
+    return passwordPattern.test(password);
+}

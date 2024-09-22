@@ -5,5 +5,9 @@ function validateForm() {
     const phone = document.getElementById("phone").value.trim();
     const password = document.getElementById("password").value.trim();
 
-    
+       // Name validation
+       if (name === "") {
+        alert("Please enter your name.");
+        return false;
+    }
 }

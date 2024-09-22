@@ -1,8 +1,35 @@
+
+
 document.getElementById("signupForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevents form from submitting before validation
 
-    validateForm();
+    showSpinner();          // Show the loading spinner
+
+    setTimeout(() => {      // Simulate form validation process (2 seconds delay)
+        if (validateForm()) {
+            hideSpinner();  // Hide spinner if validation is successful
+            alert("Form submitted successfully!");
+
+            clearForm();    // Clear input fields after successful submission
+        } else {
+            hideSpinner();  // Hide spinner if validation fails
+        }
+    }, 2000);  
+
 });
+
+function showSpinner() {
+    document.getElementById("loadingSpinner").classList.remove("hidden");
+}
+
+function hideSpinner() {
+    document.getElementById("loadingSpinner").classList.add("hidden");
+}
+
+// Clear all form inputs
+function clearForm() {
+    document.getElementById("signupForm").reset();  // Reset form inputs
+}
 
 function validateForm() {
     const name = document.getElementById("name").value.trim();

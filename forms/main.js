@@ -1,4 +1,7 @@
-function validateForm() {
+function validateForm(event) {
+
+    event.preventDefault()
+
     const name = document.getElementById("fullname").value.trim();
     const userName = document.getElementById("username").value.trim();
     const email = document.getElementById("email").value.trim();

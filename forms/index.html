@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forms</title>
+    <title>Form Validation</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="main">
         <div class="container">
-            <h1>Register</h1>
-            <form onsubmit="validateForm()">
-                <label for="fullname">Full Name: </label> 
-                <input type="text" id="fullname" name="fullname"> 
+            <h1>Sign Up Form</h1>
+            <form id="signupForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
 
-                <label for="username">Username: </label> 
-                <input type="text" id="username" name="username">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
 
-                <label for="phone"> Phone: </label>
-                <input type="tel" name="phone" id="phone">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone">
 
-                <label for="password">Password: </label>
+                <label for="password">Password:</label>
                 <input type="password" id="password" name="password">
 
                 <input type="submit" value="Submit">
             </form>
         </div>
-        
     </div>
+    
 
     <script src="main.js"></script>
 </body>

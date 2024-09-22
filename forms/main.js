@@ -1,22 +1,18 @@
-function validateForm(event) {
+document.getElementById("signupForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevents form from submitting before validation
 
-    event.preventDefault()
+    validateForm();
+});
 
-    const name = document.getElementById("fullname").value.trim();
-    const userName = document.getElementById("username").value.trim();
+function validateForm() {
+    const name = document.getElementById("name").value.trim();
     const email = document.getElementById("email").value.trim();
     const phone = document.getElementById("phone").value.trim();
     const password = document.getElementById("password").value.trim();
-
+    
     // Name validation
     if (name === "") {
         alert("Please enter your name.");
-        return false;
-    }
-
-    //User Name validation
-    if (userName === "") {
-        alert("Please enter your username.");
         return false;
     }
 
@@ -49,10 +45,9 @@ function validateForm(event) {
 
     alert("Form submitted successfully!");
     return true;
-
 }
 
-// Email validation function using regex (regular expression)
+// Email validation function using regex
 function isValidEmail(email) {
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     return emailPattern.test(email);

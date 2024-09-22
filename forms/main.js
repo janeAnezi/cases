@@ -11,6 +11,12 @@ function validateForm() {
         return false;
     }
 
+    //User Name validation
+    if (userName === "") {
+        alert("Please enter your username.");
+        return false;
+    }
+
     // Email validation
     if (email === "") {
         alert("Please enter your email.");
@@ -29,5 +35,13 @@ function validateForm() {
         return false;
     }
 
-    
+    // Password validation (minimum 6 characters, at least 1 uppercase letter, and 1 number)
+    if (password === "") {
+        alert("Please enter your password.");
+        return false;
+    } else if (!isValidPassword(password)) {
+        alert("Password must be at least 6 characters long, contain at least 1 uppercase letter, and at least 1 number.");
+        return false;
+    }
+
 }

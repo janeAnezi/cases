@@ -7,18 +7,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <p id="par"></p>
+    <h2 class="sm-hd"></h2>
+
+
+
+
+
     <!-- Loading spinner -->
     <div id="loadingSpinner" class="spinner hidden"></div>
+
     <div class="main">
+       
         <div class="container">
-            <h1>Sign Up Form</h1>
+            <h1>Sign Up Form</h1> 
             <form id="signupForm">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name">
-
+                
                 <label for="email">Email:</label>
                 <input type="text" id="email" name="email">
-
+                <p class="error" style="color: red;"></p>
+                
                 <label for="phone">Phone Number:</label>
                 <input type="text" id="phone" name="phone">
 
@@ -31,6 +41,7 @@
             
         </div>
     </div>
+    
     
 
     <script src="main.js"></script>

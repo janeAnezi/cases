@@ -1,5 +1,4 @@
 
-
 document.getElementById("signupForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevents form from submitting before validation
 
@@ -45,7 +44,8 @@ function validateForm() {
 
     // Email validation
     if (email === "") {
-        alert("Please enter your email.");
+       let errormsg = document.querySelector('.error')
+        errormsg.textContent = 'Please enter your email.';
         return false;
     } else if (!isValidEmail(email)) {
         alert("Please enter a valid email address.");
@@ -82,7 +82,7 @@ function isValidEmail(email) {
 
 // Phone validation function using regex
 function isValidPhone(phone) {
-    const phonePattern = /^[0-9]{10}$/;
+    const phonePattern = /^[0-9]{11}$/;
     return phonePattern.test(phone);
 }
 

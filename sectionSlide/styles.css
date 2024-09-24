@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+     display: flex;
+   /* flex-direction: column; */
+    gap: 20px;
+    width: 300px;
+}
+
+.section {
+    width: 100%;
+    padding: 20px;
+    color: white;
+    background-color: #3498db;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    opacity: 0;
+    transform: translateY(0);
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+/* Animation for top slide */
+.top-slide {
+    animation-name: slideInFromTop;
+}
+
+/* Animation for bottom slide */
+.bottom-slide {
+    animation-name: slideInFromBottom;
+}
+
+/* Keyframes for sliding from the top */
+@keyframes slideInFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Keyframes for sliding from the bottom */
+@keyframes slideInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

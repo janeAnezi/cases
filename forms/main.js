@@ -38,7 +38,7 @@ function validateForm() {
     
     // Name validation
     if (name === "") {
-        alert("Please enter your name.");
+        alert(" Please enter your name. ");
         return false;
     }
 

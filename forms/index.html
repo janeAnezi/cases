@@ -18,7 +18,7 @@
     <div id="loadingSpinner" class="spinner hidden"></div>
 
     <div class="main">
-       
+       <button class="butn">click me</button>
         <div class="container">
             <h1>Sign Up Form</h1> 
             <form id="signupForm">
@@ -43,7 +43,12 @@
     </div>
     
     
+    
 
-    <script src="main.js"></script>
+    <script src="main.js">
+        document.querySelector('.butn').addEventListener('click', function display() {
+            console.log('i was clicked')
+        });
+    </script>
 </body>
 </html>

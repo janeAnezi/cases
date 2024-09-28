@@ -79,11 +79,11 @@ main {
 }
 
 .img {
-    transform: translateX(-120px);
+    transform: translateX(-80px);
     margin-top: 1rem;
     width: 350px;
     height: 350px;
-    background: url('../images/nature.jpeg');
+    background: url('./foodimg.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

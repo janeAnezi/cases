@@ -15,7 +15,7 @@ const searchMeal = async (e) => {
 
         title.textContent = strMeal;
         info.textContent = strInstructions;
-        
+        img.style.backgroundImage = `url(${strMealThumb})`
     }
 
     const showAlert = () => {

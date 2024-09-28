@@ -87,6 +87,7 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    border-radius: 50%;
 }
 
 .ingredients {
@@ -106,4 +107,5 @@ main {
     padding: 10px 20px;
     border: 2px solid orange;
     font-family: sans-serif;
+    border-radius: 100px;
 }

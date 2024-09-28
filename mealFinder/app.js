@@ -7,6 +7,17 @@ const searchMeal = async (e) => {
     const img = document.querySelector('.img')
     const ingredientsOutput = document.querySelector('.ingredients')
 
+    const showMealInfo = (meal) => {
+        console.log(meal);
+
+        const { strMeal, strMealThumb, strInstructions
+        } = meal;
+
+        title.textContent = strMeal;
+        info.textContent = strInstructions;
+        
+    }
+
     const showAlert = () => {
         alert('Meal Not Found 😰')
     }

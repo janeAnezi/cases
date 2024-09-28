@@ -7,6 +7,10 @@ const searchMeal = async (e) => {
     const img = document.querySelector('.img')
     const ingredientsOutput = document.querySelector('.ingredients')
 
+    const showAlert = () => {
+        alert('Meal Not Found 😰')
+    }
+
     const fetchMealData = async (val) => {
      const res =   await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${val}`);
 
@@ -18,7 +22,17 @@ const searchMeal = async (e) => {
     const searchContent =  input.value.trim();
 
     if(searchContent) {
-        const meals = await fetchMealData(searchContent)
+        const meal = await fetchMealData(searchContent)
+
+        if(!meal) {
+            showAlert()
+            return;
+        }
+
+        meal.forEach(showMealInfo);
+
+    } else {
+        alert('Please Try Searching For Meal 🤞')
     }
 }
 
